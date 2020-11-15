@@ -14,6 +14,10 @@ class Dashboard extends CI_Controller
     {
         $data['title'] = 'Dashboard';
 
+        $data['menu'] = $this->Default_m->getAll('tabel_menu', 'id_menu')->num_rows();
+        $data['profil'] = $this->Default_m->getAll('tabel_profil', 'id_profil')->num_rows();
+        $data['user'] = $this->Default_m->getAll('tabel_user', 'id_user')->num_rows();
+
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);

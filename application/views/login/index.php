@@ -5,9 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="<?= base_url(); ?>assets/img/logo-pangkep.png">
+
+    <?php $config = $this->Default_m->getWhere('tabel_config', ['id_config' => 1])->row(); ?>
+    <meta name="description" content="<?= $config->description; ?>">
+    <meta name="author" content="<?= $config->author; ?>">
+    <meta name="keywords" content="<?= $config->keywords; ?>">
+    <link rel="icon" href="<?= base_url('assets/img/' . $config->logo); ?>">
+
     <title><?= $title; ?></title>
 
     <!-- Custom fonts for this template-->
@@ -23,8 +27,10 @@
     <link rel="icon" href="<?= base_url(); ?>assets/img/favicon.png">
 </head>
 
+
+
 <body style="
-background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(<?= base_url('assets/img/background.jpg'); ?>); 
+background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(<?= base_url('assets/img/' . $config->background); ?>); 
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -39,8 +45,8 @@ background-attachment: fixed;
                 <div class="card">
                     <div class="card-body">
                         <div class="text-center mb-4">
-                            <img src="<?= base_url('assets/img/icon-login.png'); ?>" width="170">
-                            <h3 class="text-light mt-2">TEMPLATE DEFAULT</h3>
+                            <img src="<?= base_url('assets/img/' . $config->logo); ?>" width="170">
+                            <h3 class="text-light mt-2"><?= $config->login_title; ?></h3>
                         </div>
 
                         <?= form_open(); ?>

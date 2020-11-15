@@ -6,9 +6,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Tamus Tahir">
-    <link rel="icon" href="<?= base_url(); ?>assets/img/favicon.png">
+
+    <?php $config = $this->Default_m->getWhere('tabel_config', ['id_config' => 1])->row(); ?>
+    <meta name="description" content="<?= $config->description; ?>">
+    <meta name="author" content="<?= $config->author; ?>">
+    <meta name="keywords" content="<?= $config->keywords; ?>">
+    <link rel="icon" href="<?= base_url('assets/img/' . $config->logo); ?>">
 
     <title><?= $title; ?></title>
 

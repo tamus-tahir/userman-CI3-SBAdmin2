@@ -2,7 +2,8 @@
 <footer class="sticky-footer bg-topbar-footer">
     <div class="container my-auto text-black">
         <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Tamus Tahir <?= date('Y'); ?></span>
+            <?php $config = $this->Default_m->getWhere('tabel_config', ['id_config' => 1])->row(); ?>
+            <span>Copyright &copy; <?= $config->copyright; ?> <?= date('Y'); ?></span>
         </div>
     </div>
 </footer>
