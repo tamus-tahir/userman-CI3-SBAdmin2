@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 15, 2020 at 09:43 AM
+-- Generation Time: Nov 16, 2020 at 09:12 AM
 -- Server version: 10.1.32-MariaDB
 -- PHP Version: 7.2.5
 
@@ -70,7 +70,7 @@ CREATE TABLE `tabel_config` (
 --
 
 INSERT INTO `tabel_config` (`id_config`, `copyright`, `login_title`, `brand`, `logo`, `background`, `keywords`, `description`, `author`, `sidebar`) VALUES
-(1, 'Tamus D Tahir', 'Template Admin', 'Tahir', '87cfd728129256810c7c053f2be0bd08.png', '3046fe61cf4d2e4b5cc1a0d90a2b4c10.jpg', 'Template Admin,  SB Admin 2, Bootsrap 4, CI3', 'Template Admin SB Admin 2  || Bootsrap 4 || CodeIgniter 3', 'Tamus D Tahir  || 08114180521', 'bg-primary sidebar-dark');
+(1, 'Tamus D Tahir', 'Template Admin', 'Tahir', '87cfd728129256810c7c053f2be0bd08.png', '3046fe61cf4d2e4b5cc1a0d90a2b4c10.jpg', 'Template Admin,  SB Admin 2, Bootsrap 4, CI3', 'Manajemen user menggunakan template SB Admin 2 dan Codeigniter 3', 'Tamus D Tahir  || 08114180521', 'bg-teal sidebar-dark');
 
 -- --------------------------------------------------------
 
@@ -94,11 +94,11 @@ CREATE TABLE `tabel_menu` (
 
 INSERT INTO `tabel_menu` (`id_menu`, `menu`, `url`, `icon`, `dropdown`, `urutan`, `aktif`) VALUES
 (1, 'Dashboard', 'dashboard', 'fas fa-fw fa-tachometer-alt', 0, 1, 'Yes'),
-(2, 'Manajemen User', '#', 'fas fa-fw fa-user', 0, 2, 'Yes'),
+(2, 'Manajemen User', '#', 'fas fa-fw fa-user', 0, 3, 'Yes'),
 (3, 'Menu', 'menu', '', 2, 1, 'Yes'),
 (4, 'Profil', 'profil', '', 2, 1, 'Yes'),
 (5, 'User', 'user', '', 2, 2, 'Yes'),
-(6, 'Config', 'config', 'fas fa-cogs', 0, 3, 'Yes');
+(6, 'Config', 'config', 'fas fa-cogs', 0, 2, 'Yes');
 
 -- --------------------------------------------------------
 

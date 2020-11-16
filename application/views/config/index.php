@@ -43,6 +43,12 @@
                         <option value="bg-primary sidebar-dark" <?= $ubah->sidebar == 'bg-primary sidebar-dark' ? 'selected' : ''; ?>>Primary</option>
                         <option value="bg-success sidebar-dark" <?= $ubah->sidebar == 'bg-success sidebar-dark' ? 'selected' : ''; ?>>Success</option>
                         <option value="bg-info sidebar-dark" <?= $ubah->sidebar == 'bg-info sidebar-dark' ? 'selected' : ''; ?>>Info</option>
+                        <option value="bg-indigo sidebar-dark" <?= $ubah->sidebar == 'bg-indigo sidebar-dark' ? 'selected' : ''; ?>>Indigo</option>
+                        <option value="bg-purple sidebar-dark" <?= $ubah->sidebar == 'bg-purple sidebar-dark' ? 'selected' : ''; ?>>Purple</option>
+                        <option value="bg-pink sidebar-dark" <?= $ubah->sidebar == 'bg-pink sidebar-dark' ? 'selected' : ''; ?>>Pink</option>
+                        <option value="bg-teal sidebar-dark" <?= $ubah->sidebar == 'bg-teal sidebar-dark' ? 'selected' : ''; ?>>Teal</option>
+                        <option value="bg-cyan sidebar-dark" <?= $ubah->sidebar == 'bg-cyan sidebar-dark' ? 'selected' : ''; ?>>Cyan</option>
+                        <option value="bg-secondary sidebar-dark" <?= $ubah->sidebar == 'bg-secondary sidebar-dark' ? 'selected' : ''; ?>>Secondary</option>
                         <option value="bg-dark sidebar-dark" <?= $ubah->sidebar == 'bg-dark sidebar-dark' ? 'selected' : ''; ?>>Dark</option>
                     </select>
                     <?= form_error('sidebar'); ?>

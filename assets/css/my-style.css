@@ -18,6 +18,26 @@ body {
 	color: black !important;
 }
 
+.bg-indigo {
+	background: #6610f2;
+}
+
+.bg-purple {
+	background: #6f42c1;
+}
+
+.bg-pink {
+	background: #e83e8c;
+}
+
+.bg-teal {
+	background: #20c9a6;
+}
+
+.bg-cyan {
+	background: #36b9cc;
+}
+
 .bg-topbar-footer {
 	background: #F0F8FF;
 }
