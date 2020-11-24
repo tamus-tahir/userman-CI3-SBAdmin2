@@ -19,6 +19,8 @@ class Config extends CI_Controller
         $this->form_validation->set_rules('description', 'description', 'required|trim');
         $this->form_validation->set_rules('author', 'author', 'required|trim');
         $this->form_validation->set_rules('sidebar', 'sidebar', 'required|trim');
+        $this->form_validation->set_rules('icon_sidebar', 'icon sidebar', 'required|trim');
+        $this->form_validation->set_rules('icon_color', 'icon color', 'required|trim');
         $this->form_validation->set_error_delimiters('<div class="invalid-feedback text-capitalize">', '</div>');
 
         if ($this->form_validation->run() === FALSE) {
@@ -49,6 +51,8 @@ class Config extends CI_Controller
                 'description' => $this->input->post('description'),
                 'author' => $this->input->post('author'),
                 'sidebar' => $this->input->post('sidebar'),
+                'icon_sidebar' => $this->input->post('icon_sidebar'),
+                'icon_color' => $this->input->post('icon_color'),
                 'logo' => !empty($_FILES[$name1]["name"]) ?  $this->Default_m->upload($path, $type, $size, $name1) : $logoold,
                 'background' => !empty($_FILES[$name2]["name"]) ?  $this->Default_m->upload($path, $type, $size, $name2) : $backgroundold
             ];

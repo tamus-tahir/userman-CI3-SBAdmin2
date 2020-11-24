@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 16, 2020 at 09:12 AM
+-- Generation Time: Nov 25, 2020 at 12:03 AM
 -- Server version: 10.1.32-MariaDB
 -- PHP Version: 7.2.5
 
@@ -62,15 +62,17 @@ CREATE TABLE `tabel_config` (
   `keywords` varchar(255) NOT NULL,
   `description` varchar(255) NOT NULL,
   `author` varchar(128) NOT NULL,
-  `sidebar` varchar(128) NOT NULL
+  `sidebar` varchar(128) NOT NULL,
+  `icon_sidebar` varchar(128) NOT NULL,
+  `icon_color` varchar(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tabel_config`
 --
 
-INSERT INTO `tabel_config` (`id_config`, `copyright`, `login_title`, `brand`, `logo`, `background`, `keywords`, `description`, `author`, `sidebar`) VALUES
-(1, 'Tamus D Tahir', 'Template Admin', 'Tahir', '87cfd728129256810c7c053f2be0bd08.png', '3046fe61cf4d2e4b5cc1a0d90a2b4c10.jpg', 'Template Admin,  SB Admin 2, Bootsrap 4, CI3', 'Manajemen user menggunakan template SB Admin 2 dan Codeigniter 3', 'Tamus D Tahir  || 08114180521', 'bg-teal sidebar-dark');
+INSERT INTO `tabel_config` (`id_config`, `copyright`, `login_title`, `brand`, `logo`, `background`, `keywords`, `description`, `author`, `sidebar`, `icon_sidebar`, `icon_color`) VALUES
+(1, 'Tamus D Tahir', 'Template Admin', 'Panel', '87cfd728129256810c7c053f2be0bd08.png', '3046fe61cf4d2e4b5cc1a0d90a2b4c10.jpg', 'Template Admin,  SB Admin 2, Bootsrap 4, CI3', 'Manajemen user menggunakan template SB Admin 2 dan Codeigniter 3', 'Tamus D Tahir  || 08114180521', 'bg-primary sidebar-dark', 'fas fa-user-graduate', 'text-warning');
 
 -- --------------------------------------------------------
 

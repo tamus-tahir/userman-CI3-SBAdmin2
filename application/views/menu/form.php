@@ -22,7 +22,7 @@
                 <?= form_error('url'); ?>
             </div>
             <div class="col-md-6">
-                <label for="icon">Icon</label>
+                <label for="icon">Icon ( <a href="https://fontawesome.com/icons?d=gallery&m=free" class="text-danger text-decoration-none" target="_blank">Link Icon <i class="fas fa-link"></i></a> )</label>
                 <input type="text" class="form-control <?= form_error('icon') ? 'is-invalid' : null; ?>" id="icon" name="icon" value="<?= (!empty($ubah)) ? $ubah->icon : ''; ?>">
                 <?= form_error('icon'); ?>
             </div>

@@ -4,8 +4,8 @@
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
-        <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-user-graduate text-warning"></i>
+        <div class="sidebar-brand-icon ">
+            <i class="<?= $config->icon_sidebar; ?> <?= $config->icon_color; ?>"></i>
         </div>
         <div class="sidebar-brand-text mx-3 "><?= $config->brand; ?></div>
     </a>
