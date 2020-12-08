@@ -35,37 +35,3 @@ function security()
         }
     }
 }
-
-function kodeMasuk()
-{
-    $ci = get_instance();
-    $data = $ci->db->query("SELECT MAX(kode_masuk) AS maxKode FROM tabel_masuk")->row();
-    $kode = $data->maxKode;
-
-    if ($kode) {
-        $nomor = explode('-', $kode);
-        $nomor[1]++;
-    } else {
-        $nomor[1] = 1;
-    }
-
-    $noBaru = 'OM-' . sprintf("%04s", $nomor[1]);
-    return $noBaru;
-}
-
-function kodeKeluar()
-{
-    $ci = get_instance();
-    $data = $ci->db->query("SELECT MAX(kode_keluar) AS maxKode FROM tabel_keluar")->row();
-    $kode = $data->maxKode;
-
-    if ($kode) {
-        $nomor = explode('-', $kode);
-        $nomor[1]++;
-    } else {
-        $nomor[1] = 1;
-    }
-
-    $noBaru = 'OK-' . sprintf("%04s", $nomor[1]);
-    return $noBaru;
-}
