@@ -23,11 +23,7 @@
 
     <!--Custom styles-->
     <link href="<?= base_url(); ?>assets/css/login.css" rel="stylesheet">
-
-    <link rel="icon" href="<?= base_url(); ?>assets/img/favicon.png">
 </head>
-
-
 
 <body style="
 background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(<?= base_url('assets/img/' . $config->background); ?>); 
